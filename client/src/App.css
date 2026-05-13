@@ -1,7 +1,89 @@
+/* Header styles */
+.hero {
+  padding: 3rem 2rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #e8f7ff;
+  text-shadow: 0 0 20px rgba(122, 193, 255, 0.85);
+}
+
+.hero p {
+  margin: 0.8rem auto 1.2rem;
+  max-width: 48rem;
+}
+
+nav {
+  display: inline-flex;
+  gap: 0.8rem;
+}
+
+nav a {
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  text-decoration: none;
+  color: #15306b;
+  background: linear-gradient(180deg, rgba(237, 246, 255, 0.95), rgba(195, 221, 255, 0.95));
+  border: 1px solid rgba(129, 185, 255, 0.8);
+}
+
+nav a.active {
+  box-shadow: 0 0 0 2px rgba(107, 222, 255, 0.6);
+}
+
+/* Layout */
 main {
   padding: 0 2rem 2rem;
 }
 
+/* Home styles */
+.card-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.aero-card {
+  border-radius: 20px;
+  padding: 1.2rem;
+  background: linear-gradient(160deg, rgba(224, 241, 255, 0.55), rgba(151, 203, 255, 0.23));
+  border: 1px solid rgba(141, 198, 255, 0.8);
+  box-shadow: inset 0 1px 8px rgba(255, 255, 255, 0.6), 0 16px 22px rgba(25, 79, 141, 0.26);
+  backdrop-filter: blur(4px);
+}
+
+/* Diagnostics styles */
+.diagnostics p {
+  margin-top: 0;
+}
+
+.button-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 1px solid rgba(125, 175, 240, 0.9);
+  border-radius: 999px;
+  padding: 0.5rem 0.95rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(212, 234, 255, 0.85));
+  color: #113066;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 10px rgba(101, 212, 255, 0.7);
+}
+
+.status-line {
+  margin-top: 0.9rem;
+  font-weight: 600;
+}
+
+/* Shared styles */
 .error-box {
   color: #8a0000;
   background: rgba(255, 211, 211, 0.9);

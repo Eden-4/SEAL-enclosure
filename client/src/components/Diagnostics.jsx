@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import * as Sentry from '@sentry/react'
 import { requestJson } from '../utils/api'
-import './Diagnostics.css'
 
 function Diagnostics() {
   const [message, setMessage] = useState('')

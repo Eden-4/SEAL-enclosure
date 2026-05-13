@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import * as Sentry from '@sentry/react'
 import { requestJson } from '../utils/api'
-import './Home.css'
 
 function Home() {
   const [status, setStatus] = useState(null)
