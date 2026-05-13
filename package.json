@@ -1,0 +1,30 @@
+{
+  "name": "seal-enclosure",
+  "version": "1.0.0",
+  "description": "A demo sandbox to showcase SEAL.",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm --prefix client run dev\"",
+    "dev:server": "node server/index.js",
+    "build": "npm --prefix client run build",
+    "lint": "npm --prefix client run lint",
+    "test": "echo \"No test suite configured\"",
+    "start": "NODE_ENV=production node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eden-4/SEAL-enclosure.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eden-4/SEAL-enclosure/issues"
+  },
+  "homepage": "https://github.com/Eden-4/SEAL-enclosure#readme",
+  "dependencies": {
+    "@sentry/node": "^10.53.1",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
