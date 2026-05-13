@@ -1,0 +1,27 @@
+.diagnostics p {
+  margin-top: 0;
+}
+
+.button-row {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+button {
+  border: 1px solid rgba(125, 175, 240, 0.9);
+  border-radius: 999px;
+  padding: 0.5rem 0.95rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(212, 234, 255, 0.85));
+  color: #113066;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 10px rgba(101, 212, 255, 0.7);
+}
+
+.status-line {
+  margin-top: 0.9rem;
+  font-weight: 600;
+}

@@ -1,0 +1,33 @@
+.hero {
+  padding: 3rem 2rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  color: #e8f7ff;
+  text-shadow: 0 0 20px rgba(122, 193, 255, 0.85);
+}
+
+.hero p {
+  margin: 0.8rem auto 1.2rem;
+  max-width: 48rem;
+}
+
+nav {
+  display: inline-flex;
+  gap: 0.8rem;
+}
+
+nav a {
+  border-radius: 999px;
+  padding: 0.45rem 1rem;
+  text-decoration: none;
+  color: #15306b;
+  background: linear-gradient(180deg, rgba(237, 246, 255, 0.95), rgba(195, 221, 255, 0.95));
+  border: 1px solid rgba(129, 185, 255, 0.8);
+}
+
+nav a.active {
+  box-shadow: 0 0 0 2px rgba(107, 222, 255, 0.6);
+}
