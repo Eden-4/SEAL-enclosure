@@ -50,16 +50,6 @@ function Home() {
         {status ? <p>{status.name} is {status.status}.</p> : <p>Loading status…</p>}
         {error ? <p className="error-box">{error}</p> : null}
       </article>
-      <article className="aero-card">
-        <h2>Frutiger Aero panels</h2>
-        <ul className="panel-list">
-          {panels.map((panel) => (
-            <li key={panel.id} style={{ '--glow': panel.glow }}>
-              {panel.title}
-            </li>
-          ))}
-        </ul>
-      </article>
     </section>
   )
 }
@@ -111,7 +101,7 @@ function App() {
     <>
       <header className="hero">
         <h1>SEAL Enclosure</h1>
-        <p>Express + React baseline with Frutiger Aero styling and Sentry hooks.</p>
+        <p>Express + React baseline demo.</p>
         <nav>
           <NavLink to="/" end>
             Home
